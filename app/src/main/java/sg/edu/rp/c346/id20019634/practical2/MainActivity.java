@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nHarbor seals are generally solitary and rarely interact with one another. An exception to this is the strong mother-pup bond maintained until the pup is weaned. When hauled out, adults maintain a meter or more (3 or more ft) between them. Harbor seals are not highly communicative, but if threatened a seal may respond by snorting, growling, lunging, scratching, or other aggressive gestures.");
                 intentAnimal.putExtra("url", "https://seaworld.org/animals/facts/mammals/harbor-seal/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.haborseal);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nHammerhead sharks tend to swim at an angle to decrease drag and increase their swimming efficiency and they prefer warm coastal waters.");
                 intentAnimal.putExtra("url", "https://a-z-animals.com/animals/hammerhead-shark/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.hammerhead);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nHammerhead sharks tend to swim at an angle to decrease drag and increase their swimming efficiency and they prefer warm coastal waters.");
                 intentAnimal.putExtra("url", "https://seaworld.org/animals/facts/mammals/hooded-seal/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.hoodedseal);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nWhile these sharks often migrate short distances as they seek prey, they are very loyal to their home turf and seldom leave an area once they are established.");
                 intentAnimal.putExtra("url", "https://a-z-animals.com/animals/grey-reef-shark/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.greyreef);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -182,9 +182,9 @@ public class MainActivity extends AppCompatActivity {
                 intentAnimal.putExtra("Description", "The Great White Shark is a large species of shark found mainly found inhabiting the temperate and tropical coastal waters worldwide." +
                         "\n\nThey are the largest predatory fish species in the world known to grow to lengths of 8 meters or more and weighing over 2 tonnes." +
                         "\n\nAlthough surprisingly little is still known about their biology and population sizes, it is widely agreed within the scientific community that Great White Shark population numbers are decreasing worldwide as they are threatened by both hunting and habitat loss throughout much of their natural range.");
-                intentAnimal.putExtra("url", "");
+                intentAnimal.putExtra("url", "https://a-z-animals.com/animals/great-white-shark/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.greatwhite);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -199,13 +199,55 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentAnimal = new Intent(MainActivity.this, AnimalDescriptionActivity.class);
 
-                intentAnimal.putExtra("Animal", "Grey Reef Shark");
-                intentAnimal.putExtra("Description", "" +
-                        "\n\n" +
-                        "\n\n");
-                intentAnimal.putExtra("url", "");
+                intentAnimal.putExtra("Animal", "Harp Seal");
+                intentAnimal.putExtra("Description", "Harp seals spend relatively little time on land and prefer to swim in the North Atlantic and Arctic Oceans." +
+                        "\n\nHarp seals are sometimes called saddleback seals because of the dark, saddlelike marking on the back and sides of their light yellow or gray bodies." +
+                        "\n\nBoth sexes return each year to breeding grounds in Newfoundland, the Greenland Sea, and the White Sea. On this turf males fight for their mates, battling with sharp teeth and powerful flippers.");
+                intentAnimal.putExtra("url", "https://www.nationalgeographic.com/animals/mammals/facts/harp-seal");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.harpseal);
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                intentAnimal.putExtra("picture", byteArray);
+
+                startActivity(intentAnimal);
+            }
+        });
+
+        ivHorn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal = new Intent(MainActivity.this, AnimalDescriptionActivity.class);
+
+                intentAnimal.putExtra("Animal", "Horn Shark");
+                intentAnimal.putExtra("Description", "The horn shark maintains a territory of approximately 10,000 square feet in which it roams and feeds. Some sharks barely leave their home range for their entire lives." +
+                        "\n\nThis shark is very sensitive to light. It spends almost all its life hidden in crevices, shadows, or dark waters." +
+                        "\n\nThe horn shark is a slow-moving and lethargic species that spends most of the day camouflaged among the rocks and only comes out at night to feed.");
+                intentAnimal.putExtra("url", "https://a-z-animals.com/animals/horn-shark/");
+
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.hornshark);
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                intentAnimal.putExtra("picture", byteArray);
+
+                startActivity(intentAnimal);
+            }
+        });
+
+        ivGrey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal = new Intent(MainActivity.this, AnimalDescriptionActivity.class);
+
+                intentAnimal.putExtra("Animal", "Grey Seal");
+                intentAnimal.putExtra("Description", "Grey seals can see and hear better underwater than they can on land. This helps them to find their prey in the ocean waters." +
+                        "\n\nThese seals communicate with one another in hoots, cries, growls and hisses. They also flap their flippers. Seals have their own language!" +
+                        "\n\nA grey seal is one of the rarest species of seal alive today. They can adapt to life on a coastline but go to the ocean when hunting for food. These seals can live from 25 to 35 years.");
+                intentAnimal.putExtra("url", "https://a-z-animals.com/animals/grey-seal/");
+
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.greyseal);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
