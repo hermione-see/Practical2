@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7E9AB1"
+    android:background="#927EB1"
     android:orientation="vertical">
 
     <ScrollView

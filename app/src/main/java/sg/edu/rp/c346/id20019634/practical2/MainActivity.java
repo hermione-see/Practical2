@@ -94,13 +94,122 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentAnimal = new Intent(MainActivity.this, AnimalDescriptionActivity.class);
 
-                intentAnimal.putExtra("Animal", "Gentoo Penguin");
-                intentAnimal.putExtra("Description", "The Gentoo Penguins are, much like the other penguin species, black in appearance from the back to the head." +
-                        "\nThey also adorn a white belly and are most commonly distinguished by a white stripe that runs from eye-to-eye at the top of their heads." +
-                        "\nGentoo Penguins are often relaxed and laid back. They are rarely aggressive. However, they do have some loud moments during their nesting period." +
-                        "\nThey are the only ones in the engine species that are known to be increasing in domain size as well as in numbers." +
-                        "\nThese penguins use a variety of materials during their nesting period. The materials can range from molten feathers to pebbles.");
-                intentAnimal.putExtra("url", "https://a-z-animals.com/animals/gentoo-penguin/");
+                intentAnimal.putExtra("Animal", "Habor Seal");
+                intentAnimal.putExtra("Description", "Harbor seals belong to the scientific order Pinnipedia, which includes seals, sea lions, and walruses. Seals differ from sea lions in a number of ways, including having shorter, stouter flippers, and no visible earflaps." +
+                        "\n\nHarbor seals swim with alternate back-and-forth movements of their hind flippers. Harbor seals can remain submerged for up to 28 minutes and dive to depths of 90 m (295 ft); however, they routinely forage in shallower waters." +
+                        "\n\nHarbor seals are generally solitary and rarely interact with one another. An exception to this is the strong mother-pup bond maintained until the pup is weaned. When hauled out, adults maintain a meter or more (3 or more ft) between them. Harbor seals are not highly communicative, but if threatened a seal may respond by snorting, growling, lunging, scratching, or other aggressive gestures.");
+                intentAnimal.putExtra("url", "https://seaworld.org/animals/facts/mammals/harbor-seal/");
+
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                intentAnimal.putExtra("picture", byteArray);
+
+                startActivity(intentAnimal);
+            }
+        });
+
+        ivHammer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal = new Intent(MainActivity.this, AnimalDescriptionActivity.class);
+
+                intentAnimal.putExtra("Animal", "Hammerhead Shark");
+                intentAnimal.putExtra("Description", "Hammerhead sharks long, rectangular heads serve multiple purposes, including granting the sharks 360-degree vision as well as better hunting abilities." +
+                        "\n\nThe long heads of the hammerhead shark allow the sharks to spread out their special sensory organs, giving them a hunting advantage over other sharks." +
+                        "\n\nHammerhead sharks tend to swim at an angle to decrease drag and increase their swimming efficiency and they prefer warm coastal waters.");
+                intentAnimal.putExtra("url", "https://a-z-animals.com/animals/hammerhead-shark/");
+
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                intentAnimal.putExtra("picture", byteArray);
+
+                startActivity(intentAnimal);
+            }
+        });
+
+        ivHooded.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal = new Intent(MainActivity.this, AnimalDescriptionActivity.class);
+
+                intentAnimal.putExtra("Animal", "Hooded Seal");
+                intentAnimal.putExtra("Description", "Hammerhead sharks long, rectangular heads serve multiple purposes, including granting the sharks 360-degree vision as well as better hunting abilities." +
+                        "\n\nThe long heads of the hammerhead shark allow the sharks to spread out their special sensory organs, giving them a hunting advantage over other sharks." +
+                        "\n\nHammerhead sharks tend to swim at an angle to decrease drag and increase their swimming efficiency and they prefer warm coastal waters.");
+                intentAnimal.putExtra("url", "https://seaworld.org/animals/facts/mammals/hooded-seal/");
+
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                intentAnimal.putExtra("picture", byteArray);
+
+                startActivity(intentAnimal);
+            }
+        });
+
+        ivGreyReef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal = new Intent(MainActivity.this, AnimalDescriptionActivity.class);
+
+                intentAnimal.putExtra("Animal", "Grey Reef Shark");
+                intentAnimal.putExtra("Description", "They share many characteristics with other reef shark species, including a wide, circular snout positioned directly in front of relatively large eyes" +
+                        "\n\nWhile they have many classic features seen among related shark species, they can be quickly identified by the dark lining along the back side of their tail fin." +
+                        "\n\nWhile these sharks often migrate short distances as they seek prey, they are very loyal to their home turf and seldom leave an area once they are established.");
+                intentAnimal.putExtra("url", "https://a-z-animals.com/animals/grey-reef-shark/");
+
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                intentAnimal.putExtra("picture", byteArray);
+
+                startActivity(intentAnimal);
+            }
+        });
+
+        ivGreatWhite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal = new Intent(MainActivity.this, AnimalDescriptionActivity.class);
+
+                intentAnimal.putExtra("Animal", "Great White Shark");
+                intentAnimal.putExtra("Description", "The Great White Shark is a large species of shark found mainly found inhabiting the temperate and tropical coastal waters worldwide." +
+                        "\n\nThey are the largest predatory fish species in the world known to grow to lengths of 8 meters or more and weighing over 2 tonnes." +
+                        "\n\nAlthough surprisingly little is still known about their biology and population sizes, it is widely agreed within the scientific community that Great White Shark population numbers are decreasing worldwide as they are threatened by both hunting and habitat loss throughout much of their natural range.");
+                intentAnimal.putExtra("url", "");
+
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                intentAnimal.putExtra("picture", byteArray);
+
+                startActivity(intentAnimal);
+            }
+        });
+
+        ivHarp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal = new Intent(MainActivity.this, AnimalDescriptionActivity.class);
+
+                intentAnimal.putExtra("Animal", "Grey Reef Shark");
+                intentAnimal.putExtra("Description", "" +
+                        "\n\n" +
+                        "\n\n");
+                intentAnimal.putExtra("url", "");
+
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                intentAnimal.putExtra("picture", byteArray);
 
                 startActivity(intentAnimal);
             }
