@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Practical2</string>
+    <string name="random_facts">RANDOM FACTS</string>
+    <string name="about">ABOUT</string>
+    <string name="_10_animals">10 ANIMALS</string>
+    <string name="galapagos_penguin">Galapagos Penguin</string>
+    <string name="gentoo_penguin">Gentoo Penguin</string>
+    <string name="grey_seal">Grey Seal</string>
+    <string name="habor_seal">Habor Seal</string>
+    <string name="harp_seal">Harp Seal</string>
+    <string name="hooded_seal">Hooded Seal</string>
+    <string name="great_white_shark">Great White Shark</string>
+    <string name="grey_reef_shark">Grey Reef Shark</string>
+    <string name="horn_shark">Horn Shark</string>
+    <string name="hammerhead_shark">Hammerhead Shark</string>
+    <string name="press_on_the_name_of_the_animal_you_want_to_know_more_about">Press on the name of the animal you want to know more about!</string>
+    <string name="description">Description</string>
+    <string name="animal_name">Animal Name</string>
+    <string name="AnimalPicture">Animal Picture</string>
+    <string name="url_link">Url Link</string>
+    <string name="link">URL Link: </string>
+</resources>
