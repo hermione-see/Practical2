@@ -13,10 +13,11 @@
     <string name="grey_reef_shark">Grey Reef Shark</string>
     <string name="horn_shark">Horn Shark</string>
     <string name="hammerhead_shark">Hammerhead Shark</string>
-    <string name="press_on_the_name_of_the_animal_you_want_to_know_more_about">Press on the name of the animal you want to know more about!</string>
+    <string name="press_on_the_name_of_the_animal_you_want_to_know_more_about">Press on the picture of the animal you want to know more about!</string>
     <string name="description">Description</string>
     <string name="animal_name">Animal Name</string>
     <string name="AnimalPicture">Animal Picture</string>
     <string name="url_link">Url Link</string>
     <string name="link">Resources URL Link:  </string>
+    <string name="home">Home</string>
 </resources>

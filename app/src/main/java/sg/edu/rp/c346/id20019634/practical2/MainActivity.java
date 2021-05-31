@@ -3,35 +3,19 @@ package sg.edu.rp.c346.id20019634.practical2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
-
-import java.io.ByteArrayOutputStream;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView tvGalapagos, tvGentoo, tvGrey, tvHooded, tvHorn, tvGreatWhite, tvHammer, tvGreyReef, tvHabor, tvHarp;
     ImageView ivGalapagos, ivGentoo, ivGrey, ivHooded, ivHorn, ivGreatWhite, ivHammer, ivGreyReef, ivHabor, ivHarp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        tvGalapagos = findViewById(R.id.textViewGalapagos);
-        tvGentoo = findViewById(R.id.textViewGentoo);
-        tvGreatWhite = findViewById(R.id.textViewGreatWhite);
-        tvGrey = findViewById(R.id.textViewGrey);
-        tvGreyReef = findViewById(R.id.textViewGreyReef);
-        tvHabor = findViewById(R.id.textViewHabor);
-        tvHammer = findViewById(R.id.textViewHammer);
-        tvHarp = findViewById(R.id.textViewHarp);
-        tvHooded = findViewById(R.id.textViewHooded);
-        tvHorn = findViewById(R.id.textViewHorn);
 
         ivGalapagos = findViewById(R.id.imageViewGalapagos);
         ivGentoo = findViewById(R.id.imageViewGentoo);
@@ -55,11 +39,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nPenguins likely evolved around the Antarctic-New Zealand region some 30 to 40 million years ago, when both landmasses were practically connected with each other. One group of penguins later split off from the others and traveled north, giving rise to the so-called banded penguins.");
                 intentAnimal.putExtra("url", "https://a-z-animals.com/animals/galapagos-penguin/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.galapagospenguin);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
+                intentAnimal.putExtra("picture", R.drawable.galapagospenguin);
 
                 startActivity(intentAnimal);
 
@@ -78,11 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nThey are the only ones in the engine species that are known to be increasing in domain size as well as in numbers.");
                 intentAnimal.putExtra("url", "https://a-z-animals.com/animals/gentoo-penguin/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gentoo_penguin);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
+                intentAnimal.putExtra("picture", R.drawable.gentoo_penguin);
 
                 startActivity(intentAnimal);
 
@@ -100,11 +76,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nHarbor seals are generally solitary and rarely interact with one another. An exception to this is the strong mother-pup bond maintained until the pup is weaned. When hauled out, adults maintain a meter or more (3 or more ft) between them. Harbor seals are not highly communicative, but if threatened a seal may respond by snorting, growling, lunging, scratching, or other aggressive gestures.");
                 intentAnimal.putExtra("url", "https://seaworld.org/animals/facts/mammals/harbor-seal/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.haborseal);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
+                intentAnimal.putExtra("picture", R.drawable.haborseal);
 
                 startActivity(intentAnimal);
             }
@@ -121,11 +93,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nHammerhead sharks tend to swim at an angle to decrease drag and increase their swimming efficiency and they prefer warm coastal waters.");
                 intentAnimal.putExtra("url", "https://a-z-animals.com/animals/hammerhead-shark/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.hammerhead);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
+                intentAnimal.putExtra("picture", R.drawable.hammerhead);
 
                 startActivity(intentAnimal);
             }
@@ -142,11 +110,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nHammerhead sharks tend to swim at an angle to decrease drag and increase their swimming efficiency and they prefer warm coastal waters.");
                 intentAnimal.putExtra("url", "https://seaworld.org/animals/facts/mammals/hooded-seal/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.hoodedseal);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
+                intentAnimal.putExtra("picture", R.drawable.hoodedseal);
 
                 startActivity(intentAnimal);
             }
@@ -163,11 +127,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nWhile these sharks often migrate short distances as they seek prey, they are very loyal to their home turf and seldom leave an area once they are established.");
                 intentAnimal.putExtra("url", "https://a-z-animals.com/animals/grey-reef-shark/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.greyreef);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
+                intentAnimal.putExtra("picture", R.drawable.greyreef);
 
                 startActivity(intentAnimal);
             }
@@ -184,11 +144,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nAlthough surprisingly little is still known about their biology and population sizes, it is widely agreed within the scientific community that Great White Shark population numbers are decreasing worldwide as they are threatened by both hunting and habitat loss throughout much of their natural range.");
                 intentAnimal.putExtra("url", "https://a-z-animals.com/animals/great-white-shark/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.greatwhite);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
+                intentAnimal.putExtra("picture", R.drawable.greatwhite);
 
                 startActivity(intentAnimal);
             }
@@ -205,11 +161,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nBoth sexes return each year to breeding grounds in Newfoundland, the Greenland Sea, and the White Sea. On this turf males fight for their mates, battling with sharp teeth and powerful flippers.");
                 intentAnimal.putExtra("url", "https://www.nationalgeographic.com/animals/mammals/facts/harp-seal");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.harpseal);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
+                intentAnimal.putExtra("picture", R.drawable.harpseal);
 
                 startActivity(intentAnimal);
             }
@@ -226,11 +178,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nThe horn shark is a slow-moving and lethargic species that spends most of the day camouflaged among the rocks and only comes out at night to feed.");
                 intentAnimal.putExtra("url", "https://a-z-animals.com/animals/horn-shark/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.hornshark);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
+                intentAnimal.putExtra("picture", R.drawable.hornshark);
 
                 startActivity(intentAnimal);
             }
@@ -247,12 +195,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n\nA grey seal is one of the rarest species of seal alive today. They can adapt to life on a coastline but go to the ocean when hunting for food. These seals can live from 25 to 35 years.");
                 intentAnimal.putExtra("url", "https://a-z-animals.com/animals/grey-seal/");
 
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.greyseal);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                byte[] byteArray = stream.toByteArray();
-                intentAnimal.putExtra("picture", byteArray);
-
+                intentAnimal.putExtra("picture", R.drawable.greyseal);
                 startActivity(intentAnimal);
             }
         });

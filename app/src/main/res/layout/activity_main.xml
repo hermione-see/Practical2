@@ -88,7 +88,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/galapagos_penguin"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/galapagospenguin" />
 
                     <TextView
@@ -116,7 +116,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/gentoo_penguin"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/gentoo_penguin" />
 
                     <TextView
@@ -154,7 +154,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/grey_seal"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/greyseal" />
 
                     <TextView
@@ -183,7 +183,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/habor_seal"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/haborseal" />
 
                     <TextView
@@ -219,7 +219,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/harp_seal"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/harpseal" />
 
                     <TextView
@@ -248,7 +248,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/hooded_seal"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/hoodedseal" />
 
                     <TextView
@@ -284,7 +284,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/great_white_shark"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/greatwhite" />
 
                     <TextView
@@ -313,7 +313,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/grey_reef_shark"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/greyreef" />
 
                     <TextView
@@ -349,7 +349,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/hammerhead_shark"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/hammerhead" />
 
                     <TextView
@@ -377,7 +377,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="#FFFFFF"
                         android:contentDescription="@string/horn_shark"
-                        android:padding="2dp"
+                        android:padding="3dp"
                         app:srcCompat="@drawable/hornshark" />
 
                     <TextView
