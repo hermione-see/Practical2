@@ -96,6 +96,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:fontFamily="casual"
                         android:text="@string/galapagos_penguin"
                         android:textColor="#040404" />
                 </LinearLayout>
@@ -124,6 +125,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:fontFamily="casual"
                         android:text="@string/gentoo_penguin"
                         android:textColor="#040404" />
 
@@ -161,6 +163,7 @@
                         android:id="@+id/textViewGrey"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="casual"
                         android:gravity="center"
                         android:text="@string/grey_seal"
                         android:textColor="#040404" />
@@ -191,6 +194,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:fontFamily="casual"
                         android:text="@string/habor_seal"
                         android:textColor="#040404" />
                 </LinearLayout>
@@ -227,6 +231,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:fontFamily="casual"
                         android:text="@string/harp_seal"
                         android:textColor="#040404" />
 
@@ -256,6 +261,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:fontFamily="casual"
                         android:text="@string/hooded_seal"
                         android:textColor="#040404" />
                 </LinearLayout>
@@ -292,6 +298,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:fontFamily="casual"
                         android:text="@string/great_white_shark"
                         android:textColor="#040404" />
 
@@ -321,6 +328,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:fontFamily="casual"
                         android:text="@string/grey_reef_shark"
                         android:textColor="#040404" />
                 </LinearLayout>
@@ -357,6 +365,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:fontFamily="casual"
                         android:text="@string/hammerhead_shark"
                         android:textColor="#040404" />
                 </LinearLayout>
@@ -385,6 +394,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:fontFamily="casual"
                         android:text="@string/horn_shark"
                         android:textColor="#040404" />
                 </LinearLayout>

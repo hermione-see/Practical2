@@ -2,6 +2,7 @@ package sg.edu.rp.c346.id20019634.practical2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -46,13 +47,13 @@ public class AnimalDescriptionActivity extends AppCompatActivity {
         if (animal != null) {
             output += description;
         } else {
-            output = "Error";
+            output = "ERROR";
         }
 
-        tvAnimalName.setText(animal);
-        ivAnimal.setImageResource(imagevalue);
         tvDescription.setText(output);
+        tvAnimalName.setText(animal);
         tvUrl.setText(url);
+        ivAnimal.setImageResource(imagevalue);
 
         tvUrl.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,12 +74,11 @@ public class AnimalDescriptionActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onCreateContextMenu(ContextMenu menu, View v,
-                                    ContextMenu.ContextMenuInfo menuInfo) {
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
 
-        menu.add(0,0,0,"Font Size +");
-        menu.add(0,1,1,"Font Size -");
+        menu.add(0,0,0, "Font Size +");
+        menu.add(1,1,1, "Font Size -");
 
     }
 
@@ -92,9 +92,10 @@ public class AnimalDescriptionActivity extends AppCompatActivity {
         } else {
             fontSize -= 2f;
             tvDescription.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize);
+
         }
 
         return super.onContextItemSelected(item);
-
     }
+
 }
